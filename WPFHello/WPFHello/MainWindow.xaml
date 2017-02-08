@@ -7,11 +7,16 @@
         mc:Ignorable="d"
         Title="Juhani's First WPF App" Height="350" Width="525">
     <Grid Background="#FF516876">
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="33" Margin="33,35,0,0" TextWrapping="Wrap" Text="Anna nimesi" VerticalAlignment="Top" Width="186" FontSize="20"/>
-        <Button x:Name="button" Content="Tervehdi" HorizontalAlignment="Left" Margin="33,87,0,0" VerticalAlignment="Top" Width="186" FontSize="20" Click="button_Click"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="33,185,0,0" TextWrapping="Wrap" Text="..." VerticalAlignment="Top" Width="186" Height="41"/>
-        <Button x:Name="button_Copy" Content="About..." HorizontalAlignment="Left" Margin="33,135,0,0" VerticalAlignment="Top" Width="186" FontSize="20" Click="button_Copy_Click"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="276,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="299" Width="203" FontSize="48"><Run Text="|"/><Run Text="| | |"/><LineBreak/><Run Text="|"/><Run Text="##"/><Run Text="|"/><LineBreak/><Run Text="|"/><Run Text=" ||  |"/><LineBreak/><Run Text="|"/><Run Text="---"/><Run Text="|"/></TextBlock>
-
+        <StackPanel Orientation="Horizontal">
+            <StackPanel>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="33" Margin="10" TextWrapping="Wrap" Text="Anna nimesi" VerticalAlignment="Top" Width="186" FontSize="20"/>
+        <Button x:Name="btnSayHello" Content="Tervehdi" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" Width="186" FontSize="20" Click="button_Click"/>
+        <TextBlock x:Name="txbCounter" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" Text="..." VerticalAlignment="Top" Width="186" Height="41"/>
+        <Button x:Name="btnAbout" Content="About..." HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" Width="186" FontSize="20" Click="button_Copy_Click"/>
+        </StackPanel>
+        <StackPanel>
+        <TextBlock x:Name="txbPic" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" VerticalAlignment="Top" Height="299" Width="203" FontSize="48"><Run Text="|"/><Run Text="| | |"/><LineBreak/><Run Text="|"/><Run Text="##"/><Run Text="|"/><LineBreak/><Run Text="|"/><Run Text=" ||  |"/><LineBreak/><Run Text="|"/><Run Text="---"/><Run Text="|"/></TextBlock>
+        </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
